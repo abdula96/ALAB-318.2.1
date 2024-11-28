@@ -1,0 +1,14 @@
+{
+  "name": "alab318.2.1",
+  "version": "1.0.0",
+  "description": "my lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "morgan": "^1.10.0"
+  }
+}

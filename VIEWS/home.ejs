@@ -1,0 +1,52 @@
+<!-- views/home.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <!-- Link to the stylesheet -->
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the <%= title %></h1>
+      <h2>Explore our pages and user profiles!</h2>
+    </header>
+
+    <nav>
+      <a href="/">Home</a> | <a href="/about">About</a> |
+      <a href="/user/john">John's Profile</a> |
+      <a href="/user/jane">Jane's Profile</a>
+    </nav>
+
+    <main>
+      <h2>Submit a form:</h2>
+      <form action="/submit" method="POST">
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter your name"
+          required
+        />
+      </form>
+
+      <!-- Image with inline CSS to resize it -->
+      <p>Here is the image:</p>
+      <img
+        src="/images/mountain.jpg"
+        alt="Image"
+        style="width: 300px; height: 200px"
+      />
+
+      <form action="/download" method="get">
+        <button type="submit">Download Image</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Your Website</p>
+    </footer>
+  </body>
+</html>
